@@ -5,6 +5,24 @@
     height: calc(100vh - 50px);
 }
 
+.caixa{
+    grid-gap: 2.5rem;
+    margin: 1px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.destaques__titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 100%;
+    background: rgba(0,0,0, 0.5);
+    color: #fdfdfd;
+    text-align: center;
+}
+
 .destaques__principal{
     background: url('../img/fortnite.jpg') center / cover no-repeat;
     grid-column: 1 / 4;
@@ -33,4 +51,31 @@
     background: url('../img/cs-go.jpg') center / cover no-repeat;
     grid-column: 3 / 4;
     grid-row: 3 / 3;
+}
+
+.destaques__categorias{
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+    align-items: center;
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.destaques__categorias___item{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    border: 1px solid transparent;
+}
+
+.destaques__categorias___link{
+    padding: 1rem;
+    color: inherit;
 }
